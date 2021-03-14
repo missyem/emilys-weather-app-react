@@ -1,7 +1,16 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
+import Weather from "./Weather";
 
-import App from "./App";
+import "./app.css";
+
+function App() {
+  return (
+    <div className="App">
+      <Weather />
+    </div>
+  );
+}
 
 const rootElement = document.getElementById("root");
-ReactDom.render(<App />, rootElement);
+ReactDOM.render(<App />, rootElement);
